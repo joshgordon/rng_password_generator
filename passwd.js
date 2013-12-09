@@ -34,8 +34,8 @@ function start()
       { 
 	var randNum;
 	RandBytes.getRandomBytes(2, function(buff) {
-	    randNum = buff[0] + buff[1] * 256;});
-	response.write(lines[+randNum & 0x1fff] + " "); 
+	    randNum = buff[0] + buff[1] * 256;
+	    response.write(lines[+randNum & 0x1fff] + " ");}); 
       }
     
    
